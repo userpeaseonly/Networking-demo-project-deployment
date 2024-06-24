@@ -3,21 +3,21 @@ version: '3.8'
 services:
   crm:
     build:
-      context: ./crm
+      context: ./
     command: ["python3", "main.py"]
     volumes:
       - ./crm:/app
 
   erp:
     build:
-      context: ./erp
+      context: ./
     command: ["python3", "main.py"]
     volumes:
       - ./erp:/app
 
   wms:
     build:
-      context: ./wms
+      context: ./
     command: ["python3", "main.py"]
     volumes:
       - ./wms:/app
